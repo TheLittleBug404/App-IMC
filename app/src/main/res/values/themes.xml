@@ -4,10 +4,18 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
     <style name="Theme.IMC" parent="Base.Theme.IMC" />
+
+    /*este style solo lo usaremos para el splash screen 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         /* Primero colocaremos el fondo de nuestro splash screen*/
         <item name="windowSplashScreenBackground">@color/fondoApp</item>
+        /*Aca añadire el icono*/
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logoss</item>
+        /*especificamos el tiempo de duracion de animacion de la imagen no es la animacion del splash*/
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        /* este de aca es obligatorio no dice que cuando terminemos de usar
+        este style se pase al style de nuestra aplicacion principal*/
+        <item name="postSplashScreenTheme">@style/Base.Theme.IMC</item>
     </style>
 </resources>

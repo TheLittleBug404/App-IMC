@@ -13,8 +13,17 @@
         android:theme="@style/Theme.IMC"
         tools:targetApi="31">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <!--
+        como esta es la pantalla que se carga le colocaremos que se cargue
+        nuestro theme del splash, en otras palabras le estamos diciendo que empieze
+        nuestro activity con el tema del splash
+        -->
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
